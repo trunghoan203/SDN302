@@ -1,4 +1,3 @@
-// models/questionModel.js
 const mongoose = require('mongoose');
 
 const questionSchema = new mongoose.Schema({
@@ -8,4 +7,4 @@ const questionSchema = new mongoose.Schema({
     correctAnswerIndex: { type: Number, required: true },
 });
 
-module.exports = mongoose.model('Question', questionSchema, 'question');
+module.exports = mongoose.model('Question', questionSchema);

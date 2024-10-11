@@ -34,7 +34,7 @@ exports.getAllQuestions = async (req, res) => {
 exports.updateQuestion = async (req, res) => {
     try {
         const { questionId } = req.params;
-        
+
         // Find the question by ID and update it with the provided data
         const question = await Question.findByIdAndUpdate(
             questionId,
